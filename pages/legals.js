@@ -16,7 +16,7 @@ const LegalsPage = () => {
             </Head>
             <div className="container">
                 <div className="row">
-                    <div className="col-12">
+                    <div className="col-12 p-5">
                         <h1>Mentions Légales</h1>
                         <h2>Editeur du site</h2>
                         <p>
