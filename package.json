@@ -5,11 +5,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prod": "next export"
   },
   "dependencies": {
+    "framer-motion": "^1.11.0",
     "next": "9.4.4",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "16.13.1",
+    "react-map-gl": "^5.2.5",
+    "react-slick": "^0.26.1"
   }
 }
