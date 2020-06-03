@@ -26,30 +26,43 @@ const BookingPage = () => {
                     <p>Les réservations de tables sont valables jusqu'à minuit et demi.</p>
                     </Col>
                     <Col xs={12} lg={6} className="py-2">
-                        <Form>
+                        <Form autoComplete="none">
                             <Form.Group className="py-2">
                                 <Form.Label>Nom / Prénom</Form.Label>
-                                <Form.Control placeholder="Nom et Prénom"></Form.Control>
+                                <motion.div whileTap={{scale:1.02}} whileHover={{scale:0.98}}>
+                                    <Form.Control placeholder="Nom et Prénom" autoComplete="no"></Form.Control>
+                                </motion.div>
                             </Form.Group>
                             <Form.Group className="py-2">
                                 <Form.Label>Téléphone</Form.Label>
-                                <Form.Control placeholder="Téléphone"></Form.Control>
+                                <motion.div whileTap={{scale:1.02}} whileHover={{scale:0.98}}>
+                                    <Form.Control placeholder="Téléphone" autoComplete="no"></Form.Control>
+                                </motion.div>
                             </Form.Group>
                             <Form.Group className="py-2">
                                 <Form.Label>Adresse e-mail</Form.Label>
-                                <Form.Control placeholder="Adresse e-mail"></Form.Control>
+                                <motion.div whileTap={{scale:1.02}} whileHover={{scale:0.98}}>
+                                    <Form.Control placeholder="Adresse e-mail" autoComplete="no"></Form.Control>
+                                </motion.div>
                             </Form.Group>
                             <Form.Group className="py-2">
                                 <Form.Label>Nombre de personnes</Form.Label>
-                                <Form.Control type="text" placeholder="Nombre de personnes"></Form.Control>
+                                <motion.div whileTap={{scale:1.02}} whileHover={{scale:0.98}}>
+                                    <Form.Control type="text" placeholder="Nombre de personnes" autoComplete="no"></Form.Control>
+                                </motion.div>
                             </Form.Group>
                             <Form.Group className="py-2">
                                 <Form.Label>Date</Form.Label>
-                                <Form.Control type="date" placeholder="Adresse e-mail"></Form.Control>
+                                <motion.div whileTap={{scale:1.02}} whileHover={{scale:0.98}}>
+                                    <Form.Control type="date" placeholder="Adresse e-mail" autoComplete="no"></Form.Control>
+                                </motion.div>
                             </Form.Group>
-                            <Button variant="success" type="submit" className="btn-block">
-                                Valider
-                            </Button>
+                            
+                            <motion.div whileTap={{ scale:1.02}} whileHover={{scale:0.98}}>
+                                <Button whileTap={{scale:1.03}} variant="success" type="submit" className="btn-block btn-booking">
+                                    Valider
+                                </Button>
+                            </motion.div>
                         </Form>
                     </Col>
                 </Row>
