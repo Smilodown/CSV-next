@@ -1,4 +1,7 @@
+import Link from 'next/link'
+
 const ComingEvents = () => {
+    const slug = 'example-event'
     return (
         <section>
             <div className="container">
@@ -8,7 +11,7 @@ const ComingEvents = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-4 px-5 mb-5">
+                    <Link href="/agenda/[slug]" as={`/agenda/back-to-the-club`} scroll={false}><div className="col-lg-4 px-5 mb-5">
                         <div className="row">
                             <div className="col-12 mb-4">
                                 <img src="/disc-default-600.png" alt="" />
@@ -18,8 +21,8 @@ const ComingEvents = () => {
                                 <h4>Samedi 22 Juillet</h4>
                             </div>
                         </div>
-                    </div>
-                    <div className="col-lg-4 px-5 mb-5">
+                    </div></Link>
+                    <Link href="/agenda/[slug]" as={`/agenda/summer-clubbing`} scroll={false} ><div className="col-lg-4 px-5 mb-5">
                         <div className="row">
                             <div className="col-12 mb-4">
                                 <img src="/disc-default-600.png" alt="" />
@@ -29,8 +32,8 @@ const ComingEvents = () => {
                                 <h4>Samedi 22 Juillet</h4>
                             </div>
                         </div>
-                    </div>
-                    <div className="col-lg-4 px-5 mb-5">
+                    </div></Link>
+                    <div href="/agenda/[slug]" as={`/agenda/${slug}`} className="col-lg-4 px-5 mb-5">
                         <div className="row">
                             <div className="col-12 mb-4">
                                 <img src="/disc-default-600.png" alt="" />

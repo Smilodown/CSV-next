@@ -1,6 +1,8 @@
 import Link from 'next/link'
+import { useState} from 'react'
 
 const Navigation = () => {
+
     return (
         <header id="header">
         <nav className="navbar navbar-expand-lg light-menu fixed-top">
@@ -24,7 +26,7 @@ const Navigation = () => {
                 </div>
             </div>
             <div className="d-none d-lg-block pr-4">
-                <a href="" className="btn btn-dark btn-rounded btn-text-small-upper">Réserver</a>
+                <Link href="/booking" scroll={false}><a className="btn btn-dark btn-rounded btn-text-small-upper">Réserver</a></Link>
             </div>
         </nav>
     </header>
